@@ -9,10 +9,10 @@
   --cream-2:#ebe3da;
   --sand:#ded3cd;
   --lace:#e6d7c6;
-  --ink:#3f3830;
-  --ink-2:#564c42;
-  --muted:#8d8175;
-  --muted-2:#aa9e91;
+  --ink:#564c42;
+  --ink-2:#6b6154;
+  --muted:#6f6454;
+  --muted-2:#8a7e70;
   --line:#ddd0c4;
   --line-2:#e9e0d6;
   --ok:#8a9a72;
@@ -37,10 +37,10 @@ img{display:block}
 .c{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gut)}
 
 /* ===== типографика заказчика: тонкий гротеск капсом с разрядкой ===== */
-h1,h2,h3{font-family:"Jost",system-ui,sans-serif;font-weight:300;text-transform:uppercase;margin:0;text-wrap:balance}
+h1,h2,h3{font-family:"Jost",system-ui,sans-serif;font-weight:200;text-transform:uppercase;margin:0;text-wrap:balance}
 h1{font-size:clamp(1.75rem,3.6vw,2.9rem);line-height:1.24;letter-spacing:.14em}
 h2{font-size:clamp(1.35rem,2.6vw,2.1rem);line-height:1.28;letter-spacing:.14em}
-h3{font-size:1.05rem;line-height:1.35;letter-spacing:.16em;font-weight:400}
+h3{font-size:1.05rem;line-height:1.35;letter-spacing:.16em;font-weight:300}
 p{margin:0}
 .eyebrow{font-family:"Jost",sans-serif;font-size:.72rem;font-weight:400;letter-spacing:.32em;
   text-transform:uppercase;color:var(--muted);margin:0}
@@ -131,7 +131,7 @@ nav a:hover::after{transform:scaleX(1)}
 .band{position:relative;padding:clamp(46px,8vh,78px) 0;text-align:center;background:var(--sand);overflow:hidden}
 .band::before{content:"";position:absolute;inset:0;background:url("img/lace.jpg") center/cover no-repeat;opacity:.55}
 .band .c{position:relative;z-index:1}
-.band p{font-family:"Jost",sans-serif;font-weight:300;text-transform:uppercase;letter-spacing:.2em;
+.band p{font-family:"Jost",sans-serif;font-weight:200;text-transform:uppercase;letter-spacing:.2em;
   font-size:clamp(1rem,2vw,1.5rem);line-height:1.5;max-width:22ch;margin:16px auto}
 .band .orn{justify-content:center;max-width:320px;margin:0 auto}
 .band .orn::before,.band .orn::after{background:rgba(63,56,48,.35)}
