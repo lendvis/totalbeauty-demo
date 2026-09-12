@@ -68,7 +68,7 @@ p{margin:0}
 header{position:fixed;top:0;left:0;right:0;z-index:40;border-bottom:1px solid transparent;transition:background .4s,border-color .4s}
 header.stuck{background:rgba(245,240,234,.97);border-bottom-color:var(--line-2)}
 .hbar{display:flex;align-items:center;gap:clamp(12px,3vw,36px);height:76px}
-.hbar .logo{height:40px;width:auto}
+.hbar .logo{height:34px;width:auto}
 nav{display:flex;gap:clamp(13px,2vw,26px);margin-left:auto}
 nav a{font-family:"Jost",sans-serif;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
   color:var(--ink-2);transition:color .3s;position:relative}
@@ -94,7 +94,7 @@ nav a:hover::after{transform:scaleX(1)}
 @media (prefers-reduced-motion:reduce){nav{transition:none}}
 
 /* ===== первый экран ===== */
-.hero{padding-top:clamp(104px,14vh,142px);padding-bottom:clamp(38px,6vh,64px);position:relative}
+.hero{padding-top:clamp(104px,14vh,142px);padding-bottom:clamp(38px,6vh,64px);position:relative;isolation:isolate}
 .hero::before{
   content:"";position:absolute;top:0;left:0;right:0;height:clamp(180px,26vh,300px);z-index:-1;
   background:url("img/lace.jpg") center top/cover no-repeat;opacity:.5;
@@ -276,7 +276,7 @@ textarea{resize:vertical;min-height:62px}
 /* ===== подвал ===== */
 footer{border-top:1px solid var(--line-2);padding:36px 0 calc(36px + env(safe-area-inset-bottom))}
 .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
-.foot .logo{height:52px;width:auto;margin-bottom:12px}
+.foot .logo{height:38px;width:auto;margin-bottom:12px}
 .foot small{font-size:.74rem;color:var(--muted);line-height:1.7;display:block}
 .by{font-family:"Jost",sans-serif;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 .by a{border-bottom:1px solid var(--ink);padding-bottom:2px;color:var(--ink)}
@@ -293,7 +293,7 @@ footer{border-top:1px solid var(--line-2);padding:36px 0 calc(36px + env(safe-ar
 
 <header id="hdr">
   <div class="c hbar">
-    <a href="#top" aria-label="Total Beauty — на главную"><img class="logo" src="img/logo.png" alt="Total Beauty"></a>
+    <a href="#top" aria-label="Total Beauty — на главную"><img class="logo" src="img/wordmark.png" alt="Total Beauty"></a>
     <nav id="nav">
       <a href="#works">Работы</a>
       <a href="#prices">Услуги и цены</a>
@@ -464,7 +464,7 @@ footer{border-top:1px solid var(--line-2);padding:36px 0 calc(36px + env(safe-ar
 <footer>
   <div class="c foot">
     <div>
-      <img class="logo" src="img/logo.png" alt="Total Beauty" width="609" height="407">
+      <img class="logo" src="img/wordmark.png" alt="Total Beauty" width="609" height="230">
       <small>Салон красоты · Самара, проспект Кирова, 180 · +7 (927) 009-72-00</small>
       <small style="margin-top:6px">Демонстрационная версия сайта. Форма записи данные никуда не отправляет.</small>
     </div>
